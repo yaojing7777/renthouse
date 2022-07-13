@@ -37,6 +37,7 @@
       v-for="(item, index) in housesList"
       :key="index"
       :item="item"
+
     ></FindList>
     <van-popup v-model="show" position="right" :style="{ height: '100%',width: '70%' }" />
   </div>
@@ -104,6 +105,7 @@ export default {
         console.log(err)
       }
     }
+
   }
 
 }

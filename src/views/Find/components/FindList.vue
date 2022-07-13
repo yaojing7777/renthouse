@@ -1,5 +1,5 @@
 <template>
-  <div class="findList">
+  <div class="findList" @click="goDetail(item.houseCode)">
     <div class="left">
       <img :src="`http://liufusong.top:8080${item.houseImg}`" alt="" />
     </div>
@@ -26,6 +26,12 @@ export default {
     item: {
       type: Object,
       required: true
+    }
+  },
+  methods: {
+    goDetail (value) {
+      console.log(value)
+      window.location.href = 'http://liufusong.top/hkzf/#/detail/' + value
     }
   }
 

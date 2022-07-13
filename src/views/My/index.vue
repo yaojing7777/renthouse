@@ -17,7 +17,7 @@
       </div>
     </div>
     <van-grid clickable :border="false" :column-num="3">
-      <van-grid-item icon="home-o" text="路由跳转" to="/" />
+      <van-grid-item icon="home-o" text="我的收藏" to="/favorite" />
       <van-grid-item icon="home-o" text="路由跳转" to="/" />
       <van-grid-item icon="home-o" text="路由跳转" to="/" />
       <van-grid-item icon="home-o" text="路由跳转" to="/" />

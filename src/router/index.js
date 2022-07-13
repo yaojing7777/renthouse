@@ -9,6 +9,7 @@ const Login = () => import('@/views/Login')
 const List = () => import('@/views/List')
 const City = () => import('@/views/City')
 const Renthouse = () => import('@/views/Renthouse')
+const Favority = () => import('@/views/Favirity')
 
 Vue.use(VueRouter)
 
@@ -44,6 +45,9 @@ const routes = [
   },
   {
     path: '/rent/add', component: Renthouse
+  },
+  {
+    path: '/favorite', component: Favority
   }
 ]
 

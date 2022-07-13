@@ -26,8 +26,8 @@
             :columns="columns1"
           />
         </van-dropdown-item>
-        <van-dropdown-item title="筛选" ref="item" @click="showFn" is-link>
-          <van-popup v-model="show" position="bottom" :style="{ height: '50%' }" />
+        <van-dropdown-item title="筛选" ref="item" @open="show=!show" is-link>
+
         </van-dropdown-item>
       </van-dropdown-menu>
     </div>
@@ -38,6 +38,7 @@
       :key="index"
       :item="item"
     ></FindList>
+    <van-popup v-model="show" position="right" :style="{ height: '100%',width: '70%' }" />
   </div>
 </template>
 
@@ -102,9 +103,6 @@ export default {
       } catch (err) {
         console.log(err)
       }
-    },
-    showFn () {
-      this.show = true
     }
   }
 
